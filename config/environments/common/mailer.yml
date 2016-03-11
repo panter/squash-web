@@ -1,6 +1,6 @@
 ---
-from: squash@YOUR_DOMAIN
-domain: YOUR_DOMAIN
+from: <%= ENV['APPLICATION_EMAIL_FROM'] %>
+domain: <%= ENV['APPLICATION_DOMAIN_NAME'] %>
 strategy: sendmail
 smtp_settings:
   address:
